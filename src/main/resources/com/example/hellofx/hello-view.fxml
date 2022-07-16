@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hellofx.PrzystanController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="14.0" prefHeight="39.0" prefWidth="161.0" text="Parametry" textAlignment="JUSTIFY">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="30.0" layoutY="54.0" prefHeight="30.0" prefWidth="128.0" text="Liczba statków [1-7]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="liczbaStatkowMenu" layoutX="186.0" layoutY="56.0" prefHeight="25.0" prefWidth="47.0" text="3" />
+            <Label alignment="CENTER" layoutX="9.0" layoutY="316.0" text="Czas produkcji">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="3.0" layoutY="349.0" text="Czas konsumpcji">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="135.0" layoutY="286.0" text="min">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="192.0" layoutY="286.0" text="max">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="316.0" text="[ms]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="232.0" layoutY="349.0" text="[ms]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="minCzasProdukcjiMenu" layoutX="123.0" layoutY="313.0" prefHeight="25.0" prefWidth="47.0" text="500" />
+            <TextField fx:id="minCzasKonsumpcjiMenu" layoutX="123.0" layoutY="347.0" prefHeight="25.0" prefWidth="47.0" text="500" />
+            <TextField fx:id="maxCzasProdukcjiMenu" layoutX="181.0" layoutY="313.0" prefHeight="25.0" prefWidth="47.0" text="2000" />
+            <TextField fx:id="maxCzasKonsumpcjiMenu" layoutX="181.0" layoutY="347.0" prefHeight="25.0" prefWidth="47.0" text="1500" />
+            <Label alignment="CENTER" layoutX="40.0" layoutY="85.0" prefHeight="30.0" prefWidth="128.0" text="Pojemność statków">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pojemnoscStatkowMenu" layoutX="186.0" layoutY="88.0" prefHeight="25.0" prefWidth="47.0" text="9" />
+            <Label alignment="CENTER" layoutX="38.0" layoutY="183.0" prefHeight="20.0" prefWidth="115.0" text="Czas Przeplywu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="115.0" prefHeight="30.0" prefWidth="200.0" text="Maksymalny czas postoju">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="maksymalnyCzasPostojuMenu" layoutX="186.0" layoutY="118.0" prefHeight="25.0" prefWidth="47.0" text="7000" />
+            <Button fx:id="zapiszMenu" layoutX="179.0" layoutY="390.0" mnemonicParsing="false" text="Zapisz" />
+            <Button fx:id="rozpocznijMenu" layoutX="95.0" layoutY="553.0" mnemonicParsing="false" text="Rozpocznij" />
+            <Button fx:id="zakonczMenu" layoutX="93.0" layoutY="589.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Zakończ" />
+            <Label alignment="CENTER" layoutX="36.0" layoutY="212.0" prefHeight="30.0" prefWidth="128.0" text="Rozmiar parkingu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rozmiarParkinguMenu" layoutX="188.0" layoutY="215.0" prefHeight="25.0" prefWidth="47.0" text="10" />
+            <Label alignment="CENTER" layoutX="235.0" layoutY="120.0" text="[ms]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="domyslneMenu" layoutX="15.0" layoutY="390.0" mnemonicParsing="false" text="Domyślne" />
+            <Button fx:id="wyczyscMenu" layoutX="100.0" layoutY="390.0" mnemonicParsing="false" text="Wyczysc" />
+            <Label alignment="CENTER" layoutX="5.0" layoutY="145.0" prefHeight="30.0" prefWidth="182.0" text="Czas wyładunku samochodu">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="czasWyladunkuSamochoduMenu" layoutX="188.0" layoutY="148.0" prefHeight="25.0" prefWidth="47.0" text="100" />
+            <Label alignment="CENTER" layoutX="235.0" layoutY="151.0" text="[ms]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="czasPrzeplywuMenu" layoutX="189.0" layoutY="181.0" prefHeight="25.0" prefWidth="47.0" text="5000" />
+            <Label alignment="CENTER" layoutX="235.0" layoutY="184.0" text="[ms]">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="zegar" alignment="CENTER" layoutX="37.0" layoutY="719.0" prefHeight="54.0" prefWidth="200.0" textFill="#902323">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1010.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2a4865" height="337.0" layoutX="221.0" stroke="BLACK" strokeType="INSIDE" width="74.0" />
+            <Rectangle fx:id="droga" arcHeight="5.0" arcWidth="5.0" fill="#2a4865" height="97.0" layoutY="329.0" stroke="BLACK" strokeType="INSIDE" width="1280.0" AnchorPane.bottomAnchor="374.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="329.0" />
+            <Rectangle fx:id="rzeka" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="455.0" layoutX="307.0" layoutY="154.0" stroke="BLACK" strokeType="INSIDE" width="483.0" />
+            <Rectangle fx:id="kladkaWjazdu" arcHeight="5.0" arcWidth="5.0" fill="#bfb0bd" height="39.0" layoutX="72.0" layoutY="381.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+            <Rectangle fx:id="wyspa" arcHeight="5.0" arcWidth="5.0" fill="#1ebf7c" height="200.0" layoutX="449.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+            <Rectangle fx:id="kladkaWyjazdu" arcHeight="5.0" arcWidth="5.0" fill="#bfb0bd" height="54.0" layoutX="239.0" layoutY="293.0" stroke="BLACK" strokeType="INSIDE" width="39.0" />
+            <AnchorPane fx:id="parkingSamochodowAnchor" layoutX="134.0" layoutY="173.0" prefHeight="455.0" prefWidth="124.0">
+               <children>
+                  <Rectangle fx:id="plac" arcHeight="5.0" arcWidth="5.0" fill="#577b9e" height="410.0" stroke="BLACK" strokeType="INSIDE" width="67.0" />
+                  <Rectangle fx:id="p0" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p1" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="20.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p2" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p3" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="62.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p4" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="82.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p5" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="102.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p6" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="122.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p7" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="142.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p8" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="162.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p9" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="182.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p10" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="202.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p11" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="222.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p12" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="242.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p13" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="262.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p14" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="282.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p15" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="302.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p16" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="322.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p17" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="342.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p18" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="362.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Rectangle fx:id="p19" arcHeight="5.0" arcWidth="5.0" fill="#d30252" height="20.0" layoutX="18.0" layoutY="382.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+                  <Label fx:id="licznikSamochodowWBuforze" alignment="CENTER" contentDisplay="CENTER" layoutX="-36.0" layoutY="410.0" prefHeight="46.0" prefWidth="139.0" textAlignment="JUSTIFY">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Circle fx:id="swiatloProdukcji" fill="#03e44a" layoutX="14.0" layoutY="444.0" radius="12.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>
